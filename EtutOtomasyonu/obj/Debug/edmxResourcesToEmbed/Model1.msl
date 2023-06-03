@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EtutOtomasyonuModelStoreContainer" CdmEntityContainer="EtutOtomasyonuEntities">
+    <EntitySetMapping Name="tblgiriş">
+      <EntityTypeMapping TypeName="EtutOtomasyonuModel.tblgiriş">
+        <MappingFragment StoreEntitySet="tblgiriş">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="kullanıcıadı" ColumnName="kullanıcıadı" />
+          <ScalarProperty Name="şifre" ColumnName="şifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblogrencı">
+      <EntityTypeMapping TypeName="EtutOtomasyonuModel.tblogrencı">
+        <MappingFragment StoreEntitySet="tblogrencı">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="adsoyad" ColumnName="adsoyad" />
+          <ScalarProperty Name="tc" ColumnName="tc" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+          <ScalarProperty Name="ders" ColumnName="ders" />
+          <ScalarProperty Name="sınıf" ColumnName="sınıf" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
