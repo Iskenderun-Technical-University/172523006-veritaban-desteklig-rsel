@@ -32,6 +32,8 @@ namespace EtutOtomasyonu
 
         private void Form5_Load(object sender, EventArgs e)
         {
+            // TODO: Bu kod satırı 'etutotomasyonuDataSet.OEkleme_tbl' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.oEkleme_tblTableAdapter.Fill(this.etutotomasyonuDataSet.OEkleme_tbl);
             dataGridView1.DataSource = db.tblogrencı.ToList();
         }
 

@@ -43,5 +43,16 @@ namespace EtutOtomasyonu.Properties {
                 return ((string)(this["DESKTOP_UPMCD03_NİDAConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-UPMCD03\\SQLEXPRESS;Initial Catalog=etutotomasyonu;Integrated " +
+            "Security=True")]
+        public string etutotomasyonuConnectionString {
+            get {
+                return ((string)(this["etutotomasyonuConnectionString"]));
+            }
+        }
     }
 }

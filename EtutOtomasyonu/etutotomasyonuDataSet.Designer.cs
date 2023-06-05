@@ -20,19 +20,19 @@ namespace EtutOtomasyonu {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("_DESKTOP_UPMCD03_NİDADataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("etutotomasyonuDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class _DESKTOP_UPMCD03_NİDADataSet : global::System.Data.DataSet {
+    public partial class etutotomasyonuDataSet : global::System.Data.DataSet {
         
-        private tbl_loginDataTable tabletbl_login;
+        private giris_tblDataTable tablegiris_tbl;
         
-        private transfertblDataTable tabletransfertbl;
+        private OEkleme_tblDataTable tableOEkleme_tbl;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public _DESKTOP_UPMCD03_NİDADataSet() {
+        public etutotomasyonuDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -43,7 +43,7 @@ namespace EtutOtomasyonu {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected _DESKTOP_UPMCD03_NİDADataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected etutotomasyonuDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -56,11 +56,11 @@ namespace EtutOtomasyonu {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["tbl_login"] != null)) {
-                    base.Tables.Add(new tbl_loginDataTable(ds.Tables["tbl_login"]));
+                if ((ds.Tables["giris_tbl"] != null)) {
+                    base.Tables.Add(new giris_tblDataTable(ds.Tables["giris_tbl"]));
                 }
-                if ((ds.Tables["transfertbl"] != null)) {
-                    base.Tables.Add(new transfertblDataTable(ds.Tables["transfertbl"]));
+                if ((ds.Tables["OEkleme_tbl"] != null)) {
+                    base.Tables.Add(new OEkleme_tblDataTable(ds.Tables["OEkleme_tbl"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -84,9 +84,9 @@ namespace EtutOtomasyonu {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tbl_loginDataTable tbl_login {
+        public giris_tblDataTable giris_tbl {
             get {
-                return this.tabletbl_login;
+                return this.tablegiris_tbl;
             }
         }
         
@@ -94,9 +94,9 @@ namespace EtutOtomasyonu {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public transfertblDataTable transfertbl {
+        public OEkleme_tblDataTable OEkleme_tbl {
             get {
-                return this.tabletransfertbl;
+                return this.tableOEkleme_tbl;
             }
         }
         
@@ -142,7 +142,7 @@ namespace EtutOtomasyonu {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            _DESKTOP_UPMCD03_NİDADataSet cln = ((_DESKTOP_UPMCD03_NİDADataSet)(base.Clone()));
+            etutotomasyonuDataSet cln = ((etutotomasyonuDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -167,11 +167,11 @@ namespace EtutOtomasyonu {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["tbl_login"] != null)) {
-                    base.Tables.Add(new tbl_loginDataTable(ds.Tables["tbl_login"]));
+                if ((ds.Tables["giris_tbl"] != null)) {
+                    base.Tables.Add(new giris_tblDataTable(ds.Tables["giris_tbl"]));
                 }
-                if ((ds.Tables["transfertbl"] != null)) {
-                    base.Tables.Add(new transfertblDataTable(ds.Tables["transfertbl"]));
+                if ((ds.Tables["OEkleme_tbl"] != null)) {
+                    base.Tables.Add(new OEkleme_tblDataTable(ds.Tables["OEkleme_tbl"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -206,16 +206,16 @@ namespace EtutOtomasyonu {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tabletbl_login = ((tbl_loginDataTable)(base.Tables["tbl_login"]));
+            this.tablegiris_tbl = ((giris_tblDataTable)(base.Tables["giris_tbl"]));
             if ((initTable == true)) {
-                if ((this.tabletbl_login != null)) {
-                    this.tabletbl_login.InitVars();
+                if ((this.tablegiris_tbl != null)) {
+                    this.tablegiris_tbl.InitVars();
                 }
             }
-            this.tabletransfertbl = ((transfertblDataTable)(base.Tables["transfertbl"]));
+            this.tableOEkleme_tbl = ((OEkleme_tblDataTable)(base.Tables["OEkleme_tbl"]));
             if ((initTable == true)) {
-                if ((this.tabletransfertbl != null)) {
-                    this.tabletransfertbl.InitVars();
+                if ((this.tableOEkleme_tbl != null)) {
+                    this.tableOEkleme_tbl.InitVars();
                 }
             }
         }
@@ -223,26 +223,26 @@ namespace EtutOtomasyonu {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "_DESKTOP_UPMCD03_NİDADataSet";
+            this.DataSetName = "etutotomasyonuDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/_DESKTOP_UPMCD03_NİDADataSet.xsd";
+            this.Namespace = "http://tempuri.org/etutotomasyonuDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tabletbl_login = new tbl_loginDataTable();
-            base.Tables.Add(this.tabletbl_login);
-            this.tabletransfertbl = new transfertblDataTable();
-            base.Tables.Add(this.tabletransfertbl);
+            this.tablegiris_tbl = new giris_tblDataTable();
+            base.Tables.Add(this.tablegiris_tbl);
+            this.tableOEkleme_tbl = new OEkleme_tblDataTable();
+            base.Tables.Add(this.tableOEkleme_tbl);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializetbl_login() {
+        private bool ShouldSerializegiris_tbl() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializetransfertbl() {
+        private bool ShouldSerializeOEkleme_tbl() {
             return false;
         }
         
@@ -257,7 +257,7 @@ namespace EtutOtomasyonu {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            _DESKTOP_UPMCD03_NİDADataSet ds = new _DESKTOP_UPMCD03_NİDADataSet();
+            etutotomasyonuDataSet ds = new etutotomasyonuDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -302,30 +302,26 @@ namespace EtutOtomasyonu {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void tbl_loginRowChangeEventHandler(object sender, tbl_loginRowChangeEvent e);
+        public delegate void giris_tblRowChangeEventHandler(object sender, giris_tblRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void transfertblRowChangeEventHandler(object sender, transfertblRowChangeEvent e);
+        public delegate void OEkleme_tblRowChangeEventHandler(object sender, OEkleme_tblRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tbl_loginDataTable : global::System.Data.TypedTableBase<tbl_loginRow> {
+        public partial class giris_tblDataTable : global::System.Data.TypedTableBase<giris_tblRow> {
             
-            private global::System.Data.DataColumn columnkID;
-            
-            private global::System.Data.DataColumn columnkullanici;
+            private global::System.Data.DataColumn columnkullanici_adi;
             
             private global::System.Data.DataColumn columnsifre;
             
-            private global::System.Data.DataColumn columntarih;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public tbl_loginDataTable() {
-                this.TableName = "tbl_login";
+            public giris_tblDataTable() {
+                this.TableName = "giris_tbl";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -333,7 +329,7 @@ namespace EtutOtomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal tbl_loginDataTable(global::System.Data.DataTable table) {
+            internal giris_tblDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -350,24 +346,16 @@ namespace EtutOtomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected tbl_loginDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected giris_tblDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn kIDColumn {
+            public global::System.Data.DataColumn kullanici_adiColumn {
                 get {
-                    return this.columnkID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn kullaniciColumn {
-                get {
-                    return this.columnkullanici;
+                    return this.columnkullanici_adi;
                 }
             }
             
@@ -381,14 +369,6 @@ namespace EtutOtomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn tarihColumn {
-                get {
-                    return this.columntarih;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -398,55 +378,46 @@ namespace EtutOtomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public tbl_loginRow this[int index] {
+            public giris_tblRow this[int index] {
                 get {
-                    return ((tbl_loginRow)(this.Rows[index]));
+                    return ((giris_tblRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event tbl_loginRowChangeEventHandler tbl_loginRowChanging;
+            public event giris_tblRowChangeEventHandler giris_tblRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event tbl_loginRowChangeEventHandler tbl_loginRowChanged;
+            public event giris_tblRowChangeEventHandler giris_tblRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event tbl_loginRowChangeEventHandler tbl_loginRowDeleting;
+            public event giris_tblRowChangeEventHandler giris_tblRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event tbl_loginRowChangeEventHandler tbl_loginRowDeleted;
+            public event giris_tblRowChangeEventHandler giris_tblRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Addtbl_loginRow(tbl_loginRow row) {
+            public void Addgiris_tblRow(giris_tblRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public tbl_loginRow Addtbl_loginRow(string kullanici, string sifre, System.DateTime tarih) {
-                tbl_loginRow rowtbl_loginRow = ((tbl_loginRow)(this.NewRow()));
+            public giris_tblRow Addgiris_tblRow(string kullanici_adi, string sifre) {
+                giris_tblRow rowgiris_tblRow = ((giris_tblRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
-                        kullanici,
-                        sifre,
-                        tarih};
-                rowtbl_loginRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtbl_loginRow);
-                return rowtbl_loginRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public tbl_loginRow FindBykID(int kID) {
-                return ((tbl_loginRow)(this.Rows.Find(new object[] {
-                            kID})));
+                        kullanici_adi,
+                        sifre};
+                rowgiris_tblRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowgiris_tblRow);
+                return rowgiris_tblRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tbl_loginDataTable cln = ((tbl_loginDataTable)(base.Clone()));
+                giris_tblDataTable cln = ((giris_tblDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -454,67 +425,53 @@ namespace EtutOtomasyonu {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tbl_loginDataTable();
+                return new giris_tblDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnkID = base.Columns["kID"];
-                this.columnkullanici = base.Columns["kullanici"];
+                this.columnkullanici_adi = base.Columns["kullanici_adi"];
                 this.columnsifre = base.Columns["sifre"];
-                this.columntarih = base.Columns["tarih"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnkID = new global::System.Data.DataColumn("kID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnkID);
-                this.columnkullanici = new global::System.Data.DataColumn("kullanici", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnkullanici);
+                this.columnkullanici_adi = new global::System.Data.DataColumn("kullanici_adi", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnkullanici_adi);
                 this.columnsifre = new global::System.Data.DataColumn("sifre", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnsifre);
-                this.columntarih = new global::System.Data.DataColumn("tarih", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntarih);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnkID}, true));
-                this.columnkID.AutoIncrement = true;
-                this.columnkID.AutoIncrementSeed = -1;
-                this.columnkID.AutoIncrementStep = -1;
-                this.columnkID.AllowDBNull = false;
-                this.columnkID.ReadOnly = true;
-                this.columnkID.Unique = true;
-                this.columnkullanici.AllowDBNull = false;
-                this.columnkullanici.MaxLength = 50;
+                this.columnkullanici_adi.AllowDBNull = false;
+                this.columnkullanici_adi.MaxLength = 10;
                 this.columnsifre.AllowDBNull = false;
-                this.columnsifre.MaxLength = 50;
+                this.columnsifre.MaxLength = 10;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public tbl_loginRow Newtbl_loginRow() {
-                return ((tbl_loginRow)(this.NewRow()));
+            public giris_tblRow Newgiris_tblRow() {
+                return ((giris_tblRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tbl_loginRow(builder);
+                return new giris_tblRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tbl_loginRow);
+                return typeof(giris_tblRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tbl_loginRowChanged != null)) {
-                    this.tbl_loginRowChanged(this, new tbl_loginRowChangeEvent(((tbl_loginRow)(e.Row)), e.Action));
+                if ((this.giris_tblRowChanged != null)) {
+                    this.giris_tblRowChanged(this, new giris_tblRowChangeEvent(((giris_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -522,8 +479,8 @@ namespace EtutOtomasyonu {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tbl_loginRowChanging != null)) {
-                    this.tbl_loginRowChanging(this, new tbl_loginRowChangeEvent(((tbl_loginRow)(e.Row)), e.Action));
+                if ((this.giris_tblRowChanging != null)) {
+                    this.giris_tblRowChanging(this, new giris_tblRowChangeEvent(((giris_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -531,8 +488,8 @@ namespace EtutOtomasyonu {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tbl_loginRowDeleted != null)) {
-                    this.tbl_loginRowDeleted(this, new tbl_loginRowChangeEvent(((tbl_loginRow)(e.Row)), e.Action));
+                if ((this.giris_tblRowDeleted != null)) {
+                    this.giris_tblRowDeleted(this, new giris_tblRowChangeEvent(((giris_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -540,14 +497,14 @@ namespace EtutOtomasyonu {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tbl_loginRowDeleting != null)) {
-                    this.tbl_loginRowDeleting(this, new tbl_loginRowChangeEvent(((tbl_loginRow)(e.Row)), e.Action));
+                if ((this.giris_tblRowDeleting != null)) {
+                    this.giris_tblRowDeleting(this, new giris_tblRowChangeEvent(((giris_tblRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Removetbl_loginRow(tbl_loginRow row) {
+            public void Removegiris_tblRow(giris_tblRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -556,7 +513,7 @@ namespace EtutOtomasyonu {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                _DESKTOP_UPMCD03_NİDADataSet ds = new _DESKTOP_UPMCD03_NİDADataSet();
+                etutotomasyonuDataSet ds = new etutotomasyonuDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -574,7 +531,7 @@ namespace EtutOtomasyonu {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tbl_loginDataTable";
+                attribute2.FixedValue = "giris_tblDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -620,18 +577,26 @@ namespace EtutOtomasyonu {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class transfertblDataTable : global::System.Data.TypedTableBase<transfertblRow> {
+        public partial class OEkleme_tblDataTable : global::System.Data.TypedTableBase<OEkleme_tblRow> {
             
-            private global::System.Data.DataColumn columntransfernum;
+            private global::System.Data.DataColumn columnogrenci_id;
             
-            private global::System.Data.DataColumn columnhastaadi;
+            private global::System.Data.DataColumn columnogrenci_adi;
             
-            private global::System.Data.DataColumn columnkangrubu;
+            private global::System.Data.DataColumn columntc_kimlik;
+            
+            private global::System.Data.DataColumn columntelefon_no;
+            
+            private global::System.Data.DataColumn columnadres;
+            
+            private global::System.Data.DataColumn columnders_id;
+            
+            private global::System.Data.DataColumn columnsinif_id;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public transfertblDataTable() {
-                this.TableName = "transfertbl";
+            public OEkleme_tblDataTable() {
+                this.TableName = "OEkleme_tbl";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -639,7 +604,7 @@ namespace EtutOtomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal transfertblDataTable(global::System.Data.DataTable table) {
+            internal OEkleme_tblDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -656,32 +621,64 @@ namespace EtutOtomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected transfertblDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected OEkleme_tblDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn transfernumColumn {
+            public global::System.Data.DataColumn ogrenci_idColumn {
                 get {
-                    return this.columntransfernum;
+                    return this.columnogrenci_id;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn hastaadiColumn {
+            public global::System.Data.DataColumn ogrenci_adiColumn {
                 get {
-                    return this.columnhastaadi;
+                    return this.columnogrenci_adi;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn kangrubuColumn {
+            public global::System.Data.DataColumn tc_kimlikColumn {
                 get {
-                    return this.columnkangrubu;
+                    return this.columntc_kimlik;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn telefon_noColumn {
+                get {
+                    return this.columntelefon_no;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn adresColumn {
+                get {
+                    return this.columnadres;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ders_idColumn {
+                get {
+                    return this.columnders_id;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn sinif_idColumn {
+                get {
+                    return this.columnsinif_id;
                 }
             }
             
@@ -696,47 +693,51 @@ namespace EtutOtomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public transfertblRow this[int index] {
+            public OEkleme_tblRow this[int index] {
                 get {
-                    return ((transfertblRow)(this.Rows[index]));
+                    return ((OEkleme_tblRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event transfertblRowChangeEventHandler transfertblRowChanging;
+            public event OEkleme_tblRowChangeEventHandler OEkleme_tblRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event transfertblRowChangeEventHandler transfertblRowChanged;
+            public event OEkleme_tblRowChangeEventHandler OEkleme_tblRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event transfertblRowChangeEventHandler transfertblRowDeleting;
+            public event OEkleme_tblRowChangeEventHandler OEkleme_tblRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event transfertblRowChangeEventHandler transfertblRowDeleted;
+            public event OEkleme_tblRowChangeEventHandler OEkleme_tblRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddtransfertblRow(transfertblRow row) {
+            public void AddOEkleme_tblRow(OEkleme_tblRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public transfertblRow AddtransfertblRow(int transfernum, string hastaadi, int kangrubu) {
-                transfertblRow rowtransfertblRow = ((transfertblRow)(this.NewRow()));
+            public OEkleme_tblRow AddOEkleme_tblRow(int ogrenci_id, string ogrenci_adi, string tc_kimlik, string telefon_no, string adres, int ders_id, int sinif_id) {
+                OEkleme_tblRow rowOEkleme_tblRow = ((OEkleme_tblRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        transfernum,
-                        hastaadi,
-                        kangrubu};
-                rowtransfertblRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtransfertblRow);
-                return rowtransfertblRow;
+                        ogrenci_id,
+                        ogrenci_adi,
+                        tc_kimlik,
+                        telefon_no,
+                        adres,
+                        ders_id,
+                        sinif_id};
+                rowOEkleme_tblRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowOEkleme_tblRow);
+                return rowOEkleme_tblRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                transfertblDataTable cln = ((transfertblDataTable)(base.Clone()));
+                OEkleme_tblDataTable cln = ((OEkleme_tblDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -744,56 +745,72 @@ namespace EtutOtomasyonu {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new transfertblDataTable();
+                return new OEkleme_tblDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columntransfernum = base.Columns["transfernum"];
-                this.columnhastaadi = base.Columns["hastaadi"];
-                this.columnkangrubu = base.Columns["kangrubu"];
+                this.columnogrenci_id = base.Columns["ogrenci_id"];
+                this.columnogrenci_adi = base.Columns["ogrenci_adi"];
+                this.columntc_kimlik = base.Columns["tc_kimlik"];
+                this.columntelefon_no = base.Columns["telefon_no"];
+                this.columnadres = base.Columns["adres"];
+                this.columnders_id = base.Columns["ders_id"];
+                this.columnsinif_id = base.Columns["sinif_id"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columntransfernum = new global::System.Data.DataColumn("transfernum", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntransfernum);
-                this.columnhastaadi = new global::System.Data.DataColumn("hastaadi", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnhastaadi);
-                this.columnkangrubu = new global::System.Data.DataColumn("kangrubu", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnkangrubu);
-                this.columntransfernum.AllowDBNull = false;
-                this.columnhastaadi.AllowDBNull = false;
-                this.columnhastaadi.MaxLength = 50;
-                this.columnkangrubu.AllowDBNull = false;
+                this.columnogrenci_id = new global::System.Data.DataColumn("ogrenci_id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnogrenci_id);
+                this.columnogrenci_adi = new global::System.Data.DataColumn("ogrenci_adi", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnogrenci_adi);
+                this.columntc_kimlik = new global::System.Data.DataColumn("tc_kimlik", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntc_kimlik);
+                this.columntelefon_no = new global::System.Data.DataColumn("telefon_no", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntelefon_no);
+                this.columnadres = new global::System.Data.DataColumn("adres", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnadres);
+                this.columnders_id = new global::System.Data.DataColumn("ders_id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnders_id);
+                this.columnsinif_id = new global::System.Data.DataColumn("sinif_id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnsinif_id);
+                this.columnogrenci_id.AllowDBNull = false;
+                this.columnogrenci_adi.MaxLength = 50;
+                this.columntc_kimlik.AllowDBNull = false;
+                this.columntc_kimlik.MaxLength = 11;
+                this.columntelefon_no.MaxLength = 11;
+                this.columnadres.MaxLength = 2147483647;
+                this.columnders_id.AllowDBNull = false;
+                this.columnsinif_id.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public transfertblRow NewtransfertblRow() {
-                return ((transfertblRow)(this.NewRow()));
+            public OEkleme_tblRow NewOEkleme_tblRow() {
+                return ((OEkleme_tblRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new transfertblRow(builder);
+                return new OEkleme_tblRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(transfertblRow);
+                return typeof(OEkleme_tblRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.transfertblRowChanged != null)) {
-                    this.transfertblRowChanged(this, new transfertblRowChangeEvent(((transfertblRow)(e.Row)), e.Action));
+                if ((this.OEkleme_tblRowChanged != null)) {
+                    this.OEkleme_tblRowChanged(this, new OEkleme_tblRowChangeEvent(((OEkleme_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -801,8 +818,8 @@ namespace EtutOtomasyonu {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.transfertblRowChanging != null)) {
-                    this.transfertblRowChanging(this, new transfertblRowChangeEvent(((transfertblRow)(e.Row)), e.Action));
+                if ((this.OEkleme_tblRowChanging != null)) {
+                    this.OEkleme_tblRowChanging(this, new OEkleme_tblRowChangeEvent(((OEkleme_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -810,8 +827,8 @@ namespace EtutOtomasyonu {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.transfertblRowDeleted != null)) {
-                    this.transfertblRowDeleted(this, new transfertblRowChangeEvent(((transfertblRow)(e.Row)), e.Action));
+                if ((this.OEkleme_tblRowDeleted != null)) {
+                    this.OEkleme_tblRowDeleted(this, new OEkleme_tblRowChangeEvent(((OEkleme_tblRow)(e.Row)), e.Action));
                 }
             }
             
@@ -819,14 +836,14 @@ namespace EtutOtomasyonu {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.transfertblRowDeleting != null)) {
-                    this.transfertblRowDeleting(this, new transfertblRowChangeEvent(((transfertblRow)(e.Row)), e.Action));
+                if ((this.OEkleme_tblRowDeleting != null)) {
+                    this.OEkleme_tblRowDeleting(this, new OEkleme_tblRowChangeEvent(((OEkleme_tblRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemovetransfertblRow(transfertblRow row) {
+            public void RemoveOEkleme_tblRow(OEkleme_tblRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -835,7 +852,7 @@ namespace EtutOtomasyonu {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                _DESKTOP_UPMCD03_NİDADataSet ds = new _DESKTOP_UPMCD03_NİDADataSet();
+                etutotomasyonuDataSet ds = new etutotomasyonuDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -853,7 +870,7 @@ namespace EtutOtomasyonu {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "transfertblDataTable";
+                attribute2.FixedValue = "OEkleme_tblDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -897,36 +914,25 @@ namespace EtutOtomasyonu {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tbl_loginRow : global::System.Data.DataRow {
+        public partial class giris_tblRow : global::System.Data.DataRow {
             
-            private tbl_loginDataTable tabletbl_login;
+            private giris_tblDataTable tablegiris_tbl;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal tbl_loginRow(global::System.Data.DataRowBuilder rb) : 
+            internal giris_tblRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletbl_login = ((tbl_loginDataTable)(this.Table));
+                this.tablegiris_tbl = ((giris_tblDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int kID {
+            public string kullanici_adi {
                 get {
-                    return ((int)(this[this.tabletbl_login.kIDColumn]));
+                    return ((string)(this[this.tablegiris_tbl.kullanici_adiColumn]));
                 }
                 set {
-                    this[this.tabletbl_login.kIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string kullanici {
-                get {
-                    return ((string)(this[this.tabletbl_login.kullaniciColumn]));
-                }
-                set {
-                    this[this.tabletbl_login.kullaniciColumn] = value;
+                    this[this.tablegiris_tbl.kullanici_adiColumn] = value;
                 }
             }
             
@@ -934,87 +940,154 @@ namespace EtutOtomasyonu {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string sifre {
                 get {
-                    return ((string)(this[this.tabletbl_login.sifreColumn]));
+                    return ((string)(this[this.tablegiris_tbl.sifreColumn]));
                 }
                 set {
-                    this[this.tabletbl_login.sifreColumn] = value;
+                    this[this.tablegiris_tbl.sifreColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime tarih {
-                get {
-                    try {
-                        return ((global::System.DateTime)(this[this.tabletbl_login.tarihColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'tbl_login\' tablosundaki \'tarih\' sütunun değeri DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tabletbl_login.tarihColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IstarihNull() {
-                return this.IsNull(this.tabletbl_login.tarihColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SettarihNull() {
-                this[this.tabletbl_login.tarihColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class transfertblRow : global::System.Data.DataRow {
+        public partial class OEkleme_tblRow : global::System.Data.DataRow {
             
-            private transfertblDataTable tabletransfertbl;
+            private OEkleme_tblDataTable tableOEkleme_tbl;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal transfertblRow(global::System.Data.DataRowBuilder rb) : 
+            internal OEkleme_tblRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletransfertbl = ((transfertblDataTable)(this.Table));
+                this.tableOEkleme_tbl = ((OEkleme_tblDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int transfernum {
+            public int ogrenci_id {
                 get {
-                    return ((int)(this[this.tabletransfertbl.transfernumColumn]));
+                    return ((int)(this[this.tableOEkleme_tbl.ogrenci_idColumn]));
                 }
                 set {
-                    this[this.tabletransfertbl.transfernumColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string hastaadi {
-                get {
-                    return ((string)(this[this.tabletransfertbl.hastaadiColumn]));
-                }
-                set {
-                    this[this.tabletransfertbl.hastaadiColumn] = value;
+                    this[this.tableOEkleme_tbl.ogrenci_idColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int kangrubu {
+            public string ogrenci_adi {
                 get {
-                    return ((int)(this[this.tabletransfertbl.kangrubuColumn]));
+                    try {
+                        return ((string)(this[this.tableOEkleme_tbl.ogrenci_adiColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'OEkleme_tbl\' tablosundaki \'ogrenci_adi\' sütunun değeri DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tabletransfertbl.kangrubuColumn] = value;
+                    this[this.tableOEkleme_tbl.ogrenci_adiColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string tc_kimlik {
+                get {
+                    return ((string)(this[this.tableOEkleme_tbl.tc_kimlikColumn]));
+                }
+                set {
+                    this[this.tableOEkleme_tbl.tc_kimlikColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string telefon_no {
+                get {
+                    try {
+                        return ((string)(this[this.tableOEkleme_tbl.telefon_noColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'OEkleme_tbl\' tablosundaki \'telefon_no\' sütunun değeri DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableOEkleme_tbl.telefon_noColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string adres {
+                get {
+                    try {
+                        return ((string)(this[this.tableOEkleme_tbl.adresColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'OEkleme_tbl\' tablosundaki \'adres\' sütunun değeri DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableOEkleme_tbl.adresColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int ders_id {
+                get {
+                    return ((int)(this[this.tableOEkleme_tbl.ders_idColumn]));
+                }
+                set {
+                    this[this.tableOEkleme_tbl.ders_idColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int sinif_id {
+                get {
+                    return ((int)(this[this.tableOEkleme_tbl.sinif_idColumn]));
+                }
+                set {
+                    this[this.tableOEkleme_tbl.sinif_idColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isogrenci_adiNull() {
+                return this.IsNull(this.tableOEkleme_tbl.ogrenci_adiColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setogrenci_adiNull() {
+                this[this.tableOEkleme_tbl.ogrenci_adiColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Istelefon_noNull() {
+                return this.IsNull(this.tableOEkleme_tbl.telefon_noColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Settelefon_noNull() {
+                this[this.tableOEkleme_tbl.telefon_noColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsadresNull() {
+                return this.IsNull(this.tableOEkleme_tbl.adresColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetadresNull() {
+                this[this.tableOEkleme_tbl.adresColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1022,22 +1095,22 @@ namespace EtutOtomasyonu {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class tbl_loginRowChangeEvent : global::System.EventArgs {
+        public class giris_tblRowChangeEvent : global::System.EventArgs {
             
-            private tbl_loginRow eventRow;
+            private giris_tblRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public tbl_loginRowChangeEvent(tbl_loginRow row, global::System.Data.DataRowAction action) {
+            public giris_tblRowChangeEvent(giris_tblRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public tbl_loginRow Row {
+            public giris_tblRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1056,22 +1129,22 @@ namespace EtutOtomasyonu {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class transfertblRowChangeEvent : global::System.EventArgs {
+        public class OEkleme_tblRowChangeEvent : global::System.EventArgs {
             
-            private transfertblRow eventRow;
+            private OEkleme_tblRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public transfertblRowChangeEvent(transfertblRow row, global::System.Data.DataRowAction action) {
+            public OEkleme_tblRowChangeEvent(OEkleme_tblRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public transfertblRow Row {
+            public OEkleme_tblRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1087,7 +1160,7 @@ namespace EtutOtomasyonu {
         }
     }
 }
-namespace EtutOtomasyonu._DESKTOP_UPMCD03_NİDADataSetTableAdapters {
+namespace EtutOtomasyonu.etutotomasyonuDataSetTableAdapters {
     
     
     /// <summary>
@@ -1099,7 +1172,7 @@ namespace EtutOtomasyonu._DESKTOP_UPMCD03_NİDADataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class tbl_loginTableAdapter : global::System.ComponentModel.Component {
+    public partial class giris_tblTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -1113,7 +1186,7 @@ namespace EtutOtomasyonu._DESKTOP_UPMCD03_NİDADataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public tbl_loginTableAdapter() {
+        public giris_tblTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1210,53 +1283,24 @@ namespace EtutOtomasyonu._DESKTOP_UPMCD03_NİDADataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tbl_login";
-            tableMapping.ColumnMappings.Add("kID", "kID");
-            tableMapping.ColumnMappings.Add("kullanici", "kullanici");
+            tableMapping.DataSetTable = "giris_tbl";
+            tableMapping.ColumnMappings.Add("kullanici_adi", "kullanici_adi");
             tableMapping.ColumnMappings.Add("sifre", "sifre");
-            tableMapping.ColumnMappings.Add("tarih", "tarih");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[tbl_login] WHERE (([kID] = @Original_kID) AND ([kullanici] = @" +
-                "Original_kullanici) AND ([sifre] = @Original_sifre) AND ((@IsNull_tarih = 1 AND " +
-                "[tarih] IS NULL) OR ([tarih] = @Original_tarih)))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_kID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_kullanici", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_sifre", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "sifre", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_tarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[tbl_login] ([kullanici], [sifre], [tarih]) VALUES (@kullanici," +
-                " @sifre, @tarih);\r\nSELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID" +
-                " = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[giris_tbl] ([kullanici_adi], [sifre]) VALUES (@kullanici_adi, " +
+                "@sifre)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@sifre", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "sifre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tbl_login] SET [kullanici] = @kullanici, [sifre] = @sifre, [tarih] = @tarih WHERE (([kID] = @Original_kID) AND ([kullanici] = @Original_kullanici) AND ([sifre] = @Original_sifre) AND ((@IsNull_tarih = 1 AND [tarih] IS NULL) OR ([tarih] = @Original_tarih)));
-SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@sifre", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "sifre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_kID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_kullanici", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_sifre", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "sifre", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_tarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tarih", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "kID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici_adi", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici_adi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@sifre", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "sifre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::EtutOtomasyonu.Properties.Settings.Default.DESKTOP_UPMCD03_NİDAConnectionString;
+            this._connection.ConnectionString = global::EtutOtomasyonu.Properties.Settings.Default.etutotomasyonuConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1265,7 +1309,7 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT kID, kullanici, sifre, tarih FROM dbo.tbl_login";
+            this._commandCollection[0].CommandText = "SELECT kullanici_adi, sifre FROM dbo.giris_tbl";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1273,7 +1317,7 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_DESKTOP_UPMCD03_NİDADataSet.tbl_loginDataTable dataTable) {
+        public virtual int Fill(etutotomasyonuDataSet.giris_tblDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1286,9 +1330,9 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _DESKTOP_UPMCD03_NİDADataSet.tbl_loginDataTable GetData() {
+        public virtual etutotomasyonuDataSet.giris_tblDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            _DESKTOP_UPMCD03_NİDADataSet.tbl_loginDataTable dataTable = new _DESKTOP_UPMCD03_NİDADataSet.tbl_loginDataTable();
+            etutotomasyonuDataSet.giris_tblDataTable dataTable = new etutotomasyonuDataSet.giris_tblDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1296,15 +1340,15 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_DESKTOP_UPMCD03_NİDADataSet.tbl_loginDataTable dataTable) {
+        public virtual int Update(etutotomasyonuDataSet.giris_tblDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_DESKTOP_UPMCD03_NİDADataSet dataSet) {
-            return this.Adapter.Update(dataSet, "tbl_login");
+        public virtual int Update(etutotomasyonuDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "giris_tbl");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1325,67 +1369,19 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_kID, string Original_kullanici, string Original_sifre, global::System.Nullable<global::System.DateTime> Original_tarih) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_kID));
-            if ((Original_kullanici == null)) {
-                throw new global::System.ArgumentNullException("Original_kullanici");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_kullanici));
-            }
-            if ((Original_sifre == null)) {
-                throw new global::System.ArgumentNullException("Original_sifre");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_sifre));
-            }
-            if ((Original_tarih.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_tarih.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string kullanici, string sifre, global::System.Nullable<global::System.DateTime> tarih) {
-            if ((kullanici == null)) {
-                throw new global::System.ArgumentNullException("kullanici");
+        public virtual int Insert(string kullanici_adi, string sifre) {
+            if ((kullanici_adi == null)) {
+                throw new global::System.ArgumentNullException("kullanici_adi");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(kullanici));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(kullanici_adi));
             }
             if ((sifre == null)) {
                 throw new global::System.ArgumentNullException("sifre");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(sifre));
-            }
-            if ((tarih.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(tarih.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1402,75 +1398,6 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
                 }
             }
         }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string kullanici, string sifre, global::System.Nullable<global::System.DateTime> tarih, int Original_kID, string Original_kullanici, string Original_sifre, global::System.Nullable<global::System.DateTime> Original_tarih, int kID) {
-            if ((kullanici == null)) {
-                throw new global::System.ArgumentNullException("kullanici");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(kullanici));
-            }
-            if ((sifre == null)) {
-                throw new global::System.ArgumentNullException("sifre");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(sifre));
-            }
-            if ((tarih.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(tarih.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_kID));
-            if ((Original_kullanici == null)) {
-                throw new global::System.ArgumentNullException("Original_kullanici");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_kullanici));
-            }
-            if ((Original_sifre == null)) {
-                throw new global::System.ArgumentNullException("Original_sifre");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_sifre));
-            }
-            if ((Original_tarih.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((System.DateTime)(Original_tarih.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(kID));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string kullanici, string sifre, global::System.Nullable<global::System.DateTime> tarih, int Original_kID, string Original_kullanici, string Original_sifre, global::System.Nullable<global::System.DateTime> Original_tarih) {
-            return this.Update(kullanici, sifre, tarih, Original_kID, Original_kullanici, Original_sifre, Original_tarih, Original_kID);
-        }
     }
     
     /// <summary>
@@ -1482,7 +1409,7 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class transfertblTableAdapter : global::System.ComponentModel.Component {
+    public partial class OEkleme_tblTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -1496,7 +1423,7 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public transfertblTableAdapter() {
+        public OEkleme_tblTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1593,26 +1520,35 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "transfertbl";
-            tableMapping.ColumnMappings.Add("transfernum", "transfernum");
-            tableMapping.ColumnMappings.Add("hastaadi", "hastaadi");
-            tableMapping.ColumnMappings.Add("kangrubu", "kangrubu");
+            tableMapping.DataSetTable = "OEkleme_tbl";
+            tableMapping.ColumnMappings.Add("ogrenci_id", "ogrenci_id");
+            tableMapping.ColumnMappings.Add("ogrenci_adi", "ogrenci_adi");
+            tableMapping.ColumnMappings.Add("tc_kimlik", "tc_kimlik");
+            tableMapping.ColumnMappings.Add("telefon_no", "telefon_no");
+            tableMapping.ColumnMappings.Add("adres", "adres");
+            tableMapping.ColumnMappings.Add("ders_id", "ders_id");
+            tableMapping.ColumnMappings.Add("sinif_id", "sinif_id");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[transfertbl] ([transfernum], [hastaadi], [kangrubu]) VALUES (@" +
-                "transfernum, @hastaadi, @kangrubu)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[OEkleme_tbl] ([ogrenci_id], [ogrenci_adi], [tc_kimlik], [telef" +
+                "on_no], [adres], [ders_id], [sinif_id]) VALUES (@ogrenci_id, @ogrenci_adi, @tc_k" +
+                "imlik, @telefon_no, @adres, @ders_id, @sinif_id)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@transfernum", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "transfernum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@hastaadi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "hastaadi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kangrubu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kangrubu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ogrenci_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ogrenci_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ogrenci_adi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ogrenci_adi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tc_kimlik", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tc_kimlik", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@telefon_no", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "telefon_no", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@adres", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "adres", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ders_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ders_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@sinif_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "sinif_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::EtutOtomasyonu.Properties.Settings.Default.DESKTOP_UPMCD03_NİDAConnectionString;
+            this._connection.ConnectionString = global::EtutOtomasyonu.Properties.Settings.Default.etutotomasyonuConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1621,7 +1557,8 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT transfernum, hastaadi, kangrubu FROM dbo.transfertbl";
+            this._commandCollection[0].CommandText = "SELECT ogrenci_id, ogrenci_adi, tc_kimlik, telefon_no, adres, ders_id, sinif_id F" +
+                "ROM dbo.OEkleme_tbl";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1629,7 +1566,7 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_DESKTOP_UPMCD03_NİDADataSet.transfertblDataTable dataTable) {
+        public virtual int Fill(etutotomasyonuDataSet.OEkleme_tblDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1642,9 +1579,9 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _DESKTOP_UPMCD03_NİDADataSet.transfertblDataTable GetData() {
+        public virtual etutotomasyonuDataSet.OEkleme_tblDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            _DESKTOP_UPMCD03_NİDADataSet.transfertblDataTable dataTable = new _DESKTOP_UPMCD03_NİDADataSet.transfertblDataTable();
+            etutotomasyonuDataSet.OEkleme_tblDataTable dataTable = new etutotomasyonuDataSet.OEkleme_tblDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1652,15 +1589,15 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_DESKTOP_UPMCD03_NİDADataSet.transfertblDataTable dataTable) {
+        public virtual int Update(etutotomasyonuDataSet.OEkleme_tblDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_DESKTOP_UPMCD03_NİDADataSet dataSet) {
-            return this.Adapter.Update(dataSet, "transfertbl");
+        public virtual int Update(etutotomasyonuDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "OEkleme_tbl");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1682,15 +1619,34 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int transfernum, string hastaadi, int kangrubu) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(transfernum));
-            if ((hastaadi == null)) {
-                throw new global::System.ArgumentNullException("hastaadi");
+        public virtual int Insert(int ogrenci_id, string ogrenci_adi, string tc_kimlik, string telefon_no, string adres, int ders_id, int sinif_id) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ogrenci_id));
+            if ((ogrenci_adi == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(hastaadi));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(ogrenci_adi));
             }
-            this.Adapter.InsertCommand.Parameters[2].Value = ((int)(kangrubu));
+            if ((tc_kimlik == null)) {
+                throw new global::System.ArgumentNullException("tc_kimlik");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(tc_kimlik));
+            }
+            if ((telefon_no == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(telefon_no));
+            }
+            if ((adres == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(adres));
+            }
+            this.Adapter.InsertCommand.Parameters[5].Value = ((int)(ders_id));
+            this.Adapter.InsertCommand.Parameters[6].Value = ((int)(sinif_id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1720,9 +1676,9 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         
         private UpdateOrderOption _updateOrder;
         
-        private tbl_loginTableAdapter _tbl_loginTableAdapter;
+        private giris_tblTableAdapter _giris_tblTableAdapter;
         
-        private transfertblTableAdapter _transfertblTableAdapter;
+        private OEkleme_tblTableAdapter _oEkleme_tblTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1744,12 +1700,12 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public tbl_loginTableAdapter tbl_loginTableAdapter {
+        public giris_tblTableAdapter giris_tblTableAdapter {
             get {
-                return this._tbl_loginTableAdapter;
+                return this._giris_tblTableAdapter;
             }
             set {
-                this._tbl_loginTableAdapter = value;
+                this._giris_tblTableAdapter = value;
             }
         }
         
@@ -1758,12 +1714,12 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public transfertblTableAdapter transfertblTableAdapter {
+        public OEkleme_tblTableAdapter OEkleme_tblTableAdapter {
             get {
-                return this._transfertblTableAdapter;
+                return this._oEkleme_tblTableAdapter;
             }
             set {
-                this._transfertblTableAdapter = value;
+                this._oEkleme_tblTableAdapter = value;
             }
         }
         
@@ -1786,13 +1742,13 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._tbl_loginTableAdapter != null) 
-                            && (this._tbl_loginTableAdapter.Connection != null))) {
-                    return this._tbl_loginTableAdapter.Connection;
+                if (((this._giris_tblTableAdapter != null) 
+                            && (this._giris_tblTableAdapter.Connection != null))) {
+                    return this._giris_tblTableAdapter.Connection;
                 }
-                if (((this._transfertblTableAdapter != null) 
-                            && (this._transfertblTableAdapter.Connection != null))) {
-                    return this._transfertblTableAdapter.Connection;
+                if (((this._oEkleme_tblTableAdapter != null) 
+                            && (this._oEkleme_tblTableAdapter.Connection != null))) {
+                    return this._oEkleme_tblTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1807,10 +1763,10 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._tbl_loginTableAdapter != null)) {
+                if ((this._giris_tblTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._transfertblTableAdapter != null)) {
+                if ((this._oEkleme_tblTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1822,23 +1778,23 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(_DESKTOP_UPMCD03_NİDADataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(etutotomasyonuDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tbl_loginTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tbl_login.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._giris_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.giris_tbl.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._tbl_loginTableAdapter.Update(updatedRows));
+                    result = (result + this._giris_tblTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._transfertblTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.transfertbl.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._oEkleme_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.OEkleme_tbl.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._transfertblTableAdapter.Update(updatedRows));
+                    result = (result + this._oEkleme_tblTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1850,21 +1806,21 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(_DESKTOP_UPMCD03_NİDADataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(etutotomasyonuDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tbl_loginTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tbl_login.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._giris_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.giris_tbl.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._tbl_loginTableAdapter.Update(addedRows));
+                    result = (result + this._giris_tblTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._transfertblTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.transfertbl.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._oEkleme_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.OEkleme_tbl.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._transfertblTableAdapter.Update(addedRows));
+                    result = (result + this._oEkleme_tblTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1876,21 +1832,21 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(_DESKTOP_UPMCD03_NİDADataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(etutotomasyonuDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._transfertblTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.transfertbl.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._oEkleme_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.OEkleme_tbl.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._transfertblTableAdapter.Update(deletedRows));
+                    result = (result + this._oEkleme_tblTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._tbl_loginTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tbl_login.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._giris_tblTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.giris_tbl.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._tbl_loginTableAdapter.Update(deletedRows));
+                    result = (result + this._giris_tblTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1926,20 +1882,20 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(_DESKTOP_UPMCD03_NİDADataSet dataSet) {
+        public virtual int UpdateAll(etutotomasyonuDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._tbl_loginTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._tbl_loginTableAdapter.Connection) == false))) {
+            if (((this._giris_tblTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._giris_tblTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("TableAdapterManager tarafından yönetilen tüm TableAdapter\'lar aynı bağlantı dizes" +
                         "ini kullanmalıdır.");
             }
-            if (((this._transfertblTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._transfertblTableAdapter.Connection) == false))) {
+            if (((this._oEkleme_tblTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._oEkleme_tblTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("TableAdapterManager tarafından yönetilen tüm TableAdapter\'lar aynı bağlantı dizes" +
                         "ini kullanmalıdır.");
             }
@@ -1975,22 +1931,22 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._tbl_loginTableAdapter != null)) {
-                    revertConnections.Add(this._tbl_loginTableAdapter, this._tbl_loginTableAdapter.Connection);
-                    this._tbl_loginTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._tbl_loginTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._tbl_loginTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._tbl_loginTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_loginTableAdapter.Adapter);
+                if ((this._giris_tblTableAdapter != null)) {
+                    revertConnections.Add(this._giris_tblTableAdapter, this._giris_tblTableAdapter.Connection);
+                    this._giris_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._giris_tblTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._giris_tblTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._giris_tblTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._giris_tblTableAdapter.Adapter);
                     }
                 }
-                if ((this._transfertblTableAdapter != null)) {
-                    revertConnections.Add(this._transfertblTableAdapter, this._transfertblTableAdapter.Connection);
-                    this._transfertblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._transfertblTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._transfertblTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._transfertblTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._transfertblTableAdapter.Adapter);
+                if ((this._oEkleme_tblTableAdapter != null)) {
+                    revertConnections.Add(this._oEkleme_tblTableAdapter, this._oEkleme_tblTableAdapter.Connection);
+                    this._oEkleme_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._oEkleme_tblTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._oEkleme_tblTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._oEkleme_tblTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._oEkleme_tblTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -2051,13 +2007,13 @@ SELECT kID, kullanici, sifre, tarih FROM tbl_login WHERE (kID = @kID)";
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._tbl_loginTableAdapter != null)) {
-                    this._tbl_loginTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tbl_loginTableAdapter]));
-                    this._tbl_loginTableAdapter.Transaction = null;
+                if ((this._giris_tblTableAdapter != null)) {
+                    this._giris_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._giris_tblTableAdapter]));
+                    this._giris_tblTableAdapter.Transaction = null;
                 }
-                if ((this._transfertblTableAdapter != null)) {
-                    this._transfertblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._transfertblTableAdapter]));
-                    this._transfertblTableAdapter.Transaction = null;
+                if ((this._oEkleme_tblTableAdapter != null)) {
+                    this._oEkleme_tblTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._oEkleme_tblTableAdapter]));
+                    this._oEkleme_tblTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
